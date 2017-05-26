@@ -12,7 +12,7 @@ end
 COCKTAILS = ["Mojito", "Vodka Martini", "Espresso Martini", "Reggae Rum Punch"]
 
 COCKTAILS.each do |cocktail|
-  Cocktail.create!(name: cocktail)
+  Cocktail.create!(name: cocktail, description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eaque odio nemo quibusdam culpa consectetur, porro officia repudiandae, eligendi voluptatibus quis ullam excepturi sint nobis sunt soluta omnis. Cupiditate, provident.")
 end
 
 5.times do

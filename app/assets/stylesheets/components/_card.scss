@@ -9,6 +9,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .card-link {

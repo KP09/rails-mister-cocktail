@@ -7,12 +7,13 @@
 
   <div class="row">
     <!-- Cocktail info -->
-    <div class="col-xs-12 col-sm-6">
+    <div class="col-xs-12 col-sm-7">
       <h3>Description</h3>
+      <p><%= @cocktail.description %></p>
     </div>
 
     <!-- Ingredients -->
-    <div class="col-xs-12 col-md-6">
+    <div class="col-xs-12 col-md-5">
       <h3>Ingredients</h3>
       <ul class="list-unstyled">
         <% @cocktail.doses.each do |dose| %>

@@ -9,14 +9,14 @@ url_hash["drinks"].each do |element|
   Ingredient.create!(name: element["strIngredient1"])
 end
 
-COCKTAILS = ["Mojito", "Vodka Martini", "Espresso Martini", "Reggae Rum Punch"]
+# COCKTAILS = ["Mojito", "Vodka Martini", "Espresso Martini", "Reggae Rum Punch"]
 
-COCKTAILS.each do |cocktail|
-  Cocktail.create!(name: cocktail)
-end
+# COCKTAILS.each do |cocktail|
+#   Cocktail.create!(name: cocktail)
+# end
 
-5.times do
-  cocktail = Cocktail.all.sample
-  ingredient = Ingredient.all.sample
-  Dose.create!(description: "Some description", cocktail: cocktail, ingredient: ingredient)
-end
+# 5.times do
+#   cocktail = Cocktail.all.sample
+#   ingredient = Ingredient.all.sample
+#   Dose.create!(description: "Some description", cocktail: cocktail, ingredient: ingredient)
+# end

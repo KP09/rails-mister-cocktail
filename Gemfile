@@ -43,6 +43,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 # Use cloudinary for file storage
 gem 'cloudinary'
+# Use attachinary to upload images to cloudinary
+gem 'attachinary', github: 'assembler/attachinary'
+# Use jquery fileupload to support attachinary
+gem 'jquery-fileupload-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

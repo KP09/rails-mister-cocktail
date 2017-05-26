@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20170526104832) do
     t.string "resource_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent"
     t.index ["attachinariable_type", "attachinariable_id"], name: "by_scoped_parents"
   end
 

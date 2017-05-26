@@ -1,0 +1,15 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>all ingredients</h1>
+      <%= link_to "Add ingredient", new_ingredient_path, class: "btn btn-danger bottom-spacing" %>
+    </div>
+    <div class="text-center">
+      <ul class ="list-unstyled">
+        <% @ingredients.order(:name).each do |ingredient| %>
+          <li><strong><%= link_to ingredient.name, edit_ingredient_path(ingredient) %></strong> (<%= link_to "delete", ingredient_path(ingredient), method: "delete" %>)</li>
+        <% end  %>
+      </ul>
+    </div>
+  </div>
+</div>

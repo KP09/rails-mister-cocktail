@@ -17,6 +17,9 @@
   justify-content: space-around;
   align-items: center;
 }
+.bottom-spacing {
+  margin-bottom: 10px;
+}
 // Backgrounds
 .bg-black {
   background: #4a4a4a;
@@ -29,4 +32,12 @@
 }
 .bg-dark-blue {
   background: #3b5998;
+}
+
+a {
+  color: $charcoal;
+  &:hover {
+    color: $orange;
+    text-decoration: none;
+  }
 }

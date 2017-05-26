@@ -12,6 +12,11 @@
 .page-content {
   min-height: 100%;
 }
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 // Backgrounds
 .bg-black {
   background: #4a4a4a;

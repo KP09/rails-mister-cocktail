@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h1 class="text-center">All cocktails</h1>
+      <h1 class="text-center">all cocktails</h1>
     </div>
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-           url('<%= cl_image_path (cocktail.photo? ? cocktail.photo.path : 'pexels-photo-109275_2_yvz6xg')%>')">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),
+           url('<%= cl_image_path (cocktail.photo? ? cocktail.photo.path : 'pexels-photo-109275_3_vdtoud'), height: 600, width: 600, crop: :fill%>')">
           <h3><%= cocktail.name %></h3>
           <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
         </div>

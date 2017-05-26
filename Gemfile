@@ -25,6 +25,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'json'
+gem 'figaro'
 
 
 # Use CoffeeScript for .coffee assets and views
